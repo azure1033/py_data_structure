@@ -1,0 +1,85 @@
+\documentclass{ctexart}
+\usepackage{physics}
+\usepackage{graphicx}
+
+\title{Electromagnetic Note}
+\author{lin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\part{电多极矩}
+\section{电势的多极展开}
+真空中给定电荷密度为:
+\begin{equation}
+    \rho{(\mathbf{x'})}=\int_{V}\frac{\rho{(\mathbf{x'})}dV'}{4\pi\varepsilon_{0}r}
+\end{equation}
+而对于原式有:
+\begin{equation}
+    \frac{1}{r}=\frac{1}{R}-\mathbf{x'}\cdot\nabla\frac{1}{R}+\frac{1}{2!}\sum_{i,j}x'_{i}x'_{j}\frac{\partial^2}{\partial x_{i}\partial x_{j}}
+\frac{1}{R}+\cdots
+\end{equation}
+将(2)式代入(1)式中得:
+\begin{equation}
+    \varphi{(\mathbf{x'})} = \frac{1}{4\pi\varepsilon_{0}}\int_{V}[\frac{1}{R}-\mathbf{x'}\cdot\frac{1}{R}+\frac{1}{2!}\sum_{i,j}x_{i}x_{j}\frac{\partial^2}{\partial x'_{i}\partial x'_{j}\frac{1}{R}}
+\end{equation}
+我们知道:
+\begin{equation}
+Q=\int_{V}\rho(\mathbf{x'})dV'
+\end{equation}
+
+\begin{equation}
+\mathbf{p}=\int_{V}\rho(\mathbf{x'})\mathbf{x'}dV'
+\end{equation}
+
+\begin{equation}
+\mathcal{P}=\int_{V}3x'_{i}x'_{j}\rho(\mathbf{x'})dV'
+\end{equation}
+故(3)式可以写作:
+\begin{equation}
+    \varphi(\mathbf{x})=\frac{1}{4\pi\varepsilon_{0}}(\frac{Q}{R}-\mathbf{p}\cdot\frac{1}{R}+\frac{1}{6}\sum_{i,j}\mathcal{P}_{ij}\frac{\partial^2}{\partial x_{i}\partial x_{j}}\frac{1}{R}+\cdots)
+\end{equation}
+
+\section{电多极矩}
+考虑(7)式的各项:
+\begin{itemize}
+    \item[第一项]$\varphi^{(0)}=\frac{Q}{4\pi\varepsilon R}$
+    \item[第二项]$\varphi^{(1)}=-\frac{1}{4\pi\varepsilon}\mathbf{p}\cdot\nabla\frac{1}{R}=\frac{\mathbf{p}\cdot\mathbf{R}}{4\pi\varepsilon_{0} R^3}$
+    \item[第三项]$\varphi^{(2)}=\frac{1}{4\pi\varepsilon_{0}}\frac{1}{6}\sum_{i,j}\mathcal{P}_{i,j}\frac{\partial^2}{\partial x_{i}\partial x_{j}}\frac{1}{R}$
+\end{itemize}
+如果一个体系的电荷分布对原点对称,它的电偶极矩为零是显然的(5).
+总电荷为零而电偶极矩不为零的最简单的电荷体系是一对正负点电荷.
+设$\mathbf{x'}$点上有一点电荷+Q,$\mathbf{-x'}$点上有一点电荷-Q,由(5)式,
+这体系的电偶极矩为:
+\begin{equation}
+    \mathbf{p}=2Q\mathbf{x'}=Q\mathbf{l}
+\end{equation}
+$\mathbf{l}$为由负电荷到正电荷的矢径.
+
+
+可以证明电四极矩只有五个独立分量.对于$R\neq 0$时有:
+\begin{equation}
+    \nabla^2\frac{1}{R}=0
+\end{equation}
+上式可写作:
+\begin{equation}
+    \sum_{i,j}\frac{\partial^2}{\partial x_{i}\partial x_{j}}\frac{1}{R}=0
+\end{equation}
+可以重新定义电四极矩张量:
+\begin{equation}
+    \mathcal{P}_{ij}=\int_{V}(3x'_{i}x'_{j}-r'^2\delta_{ij})\rho(\mathbf{x'})dV'
+\end{equation}
+则$\varphi^{(2)}$可以写作:
+\begin{equation}
+    \frac{1}{4\pi\varepsilon_{0}}\frac{1}{6}\sum_{i,j}\frac{\partial^2}{\partial x_{i}\partial x_{j}}\frac{1}{R}
+\end{equation}
+
+
+
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=10cm]{117204371_p0_master1200.jpg}
+\caption{东风谷早苗}
+\end{figure}
+\end{document}

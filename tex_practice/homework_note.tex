@@ -1,0 +1,42 @@
+\documentclass{ctexart}
+
+\usepackage{graphicx}
+
+\title{数学工具作业}
+\author{lin}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{第一题}
+
+显然有:
+\begin{equation}
+    \vec{\vec{I}}=\delta_{ij}I_{ij}\partial_{j}\varphi=\delta_{ij}(\partial_{j}\varphi)=\nabla\varphi=\delta_{ij}(I_{ij}\partial_{j}\varphi)
+    =\nabla(\vec{\vec{I}}\varphi)
+\end{equation}
+\section{第二题}
+\begin{equation}
+    \nabla\cdot(\vec{A}\times\vec{B})=\partial_{i}\varepsilon_{ijk}A_{j}B_{k}=\varepsilon_{ijk}(B_{k}\partial_{i}A_{j}+A_{j}\partial_{i}B_{k})=
+    \vec{B}\cdot(\nabla\times\vec{A})-\vec{A}\cdot(\nabla\times\vec{B})
+\end{equation}
+\section{第三题}
+\subsection{(a)}
+\begin{equation}
+    \nabla\times(\vec{\vec{\omega}\times\vec{x}})=\vec{\omega}(\vec{x}\cdot\nabla)+\vec{\omega}(\nabla\cdot\vec{x})-\vec{x}(\vec{\omega}\cdot\vec{x})-\vec{x}(\nabla\cdot\vec{\omega})
+    =3\vec{\omega}-\vec{\omega}=2\vec{\omega}
+\end{equation}
+注意到$\nabla\cdot\vec{x}=3$且$\nabla\cdot\vec{\omega}=0$.
+\subsection{(b)}
+由(a)显然有:
+\begin{equation}
+    \int_{S}2\vec{\omega}\cdot d\vec{a}=\int_{S}[\nabla\times(\vec{\omega}\times\vec{x})]\cdot d\vec{a}=\oint_{\partial V}(\vec{\omega}\times\vec{x})\cdot d\vec{l}
+    =\oint_{\partial V}(\vec{x}\times d\vec{l})\cdot\vec{\omega}
+\end{equation}
+等式两边同时消去$\vec{\omega}$即得到所求等式.
+\begin{figure}[htbp]
+\centering\includegraphics[width=10cm]{116161847_p0_master1200}
+\caption{似乎是碧蓝档案的角色}
+\end{figure}
+
+\end{document}
